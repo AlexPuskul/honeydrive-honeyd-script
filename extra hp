@@ -1,0 +1,392 @@
+create default
+set default default tcp action block
+set default default udp action block
+set default default icmp action open
+
+create windows
+set windows personality "Microsoft Windows XP Professional SP1"
+set windows default tcp action reset
+add windows tcp port 135 open
+add windows tcp port 139 open
+add windows tcp port 445 open
+
+set windows ethernet "00:00:24:ab:8c:12"
+dhcp windows on eth0
+
+create windows2
+set windows2 personality "Microsoft Windows XP Professional SP1"
+set windows2 default tcp action reset
+add windows2 tcp port 111 open
+add windows2 tcp port 222 open
+add windows2 tcp port 333 open
+
+set windows2 ethernet "00:00:24:ab:8c:13"
+dhcp windows2 on eth0
+
+create windows3
+set windows3 personality "Microsoft Windows XP Professional SP1"
+set windows3 default tcp action reset
+add windows3 tcp port 777 open
+add windows3 tcp port 898 open
+add windows3 tcp port 69 open
+
+set windows3 ethernet "00:00:24:ab:8c:14"
+dhcp windows3 on eth0
+
+create windows4
+set windows4 personality "Microsoft Windows XP Professional SP1"
+set windows4 default tcp action reset
+add windows4 tcp port 135 open
+add windows4 tcp port 139 open
+add windows4 tcp port 445 open
+
+set windows4 ethernet "01:00:24:ab:8c:12"
+dhcp windows4 on eth0
+
+create windows5
+set windows5 personality "Microsoft Windows XP Professional SP1"
+set windows5 default tcp action reset
+add windows5 tcp port 111 open
+add windows5 tcp port 222 open
+add windows5 tcp port 333 open
+
+set windows5 ethernet "02:00:24:ab:8c:13"
+dhcp windows5 on eth0
+
+create windows6
+set windows6 personality "Microsoft Windows XP Professional SP1"
+set windows6 default tcp action reset
+add windows6 tcp port 777 open
+add windows6 tcp port 898 open
+add windows6 tcp port 69 open
+
+set windows6 ethernet "03:00:24:ab:8c:14"
+dhcp windows6 on eth0
+
+create windows7
+set windows7 personality "Microsoft Windows XP Professional SP1"
+set windows7 default tcp action reset
+add windows7 tcp port 135 open
+add windows7 tcp port 139 open
+add windows7 tcp port 445 open
+
+set windows7 ethernet "00:01:24:ab:8c:12"
+dhcp windows7 on eth0
+
+create windows8
+set windows8 personality "Microsoft Windows XP Professional SP1"
+set windows8 default tcp action reset
+add windows8 tcp port 111 open
+add windows8 tcp port 222 open
+add windows8 tcp port 333 open
+
+set windows8 ethernet "00:02:24:ab:8c:13"
+dhcp windows8 on eth0
+
+
+
+
+
+
+
+
+create windows9
+set windows9 personality "Microsoft Windows XP Professional SP1"
+set windows9 default tcp action reset
+add windows9 tcp port 777 open
+add windows9 tcp port 898 open
+add windows9 tcp port 69 open
+
+set windows9 ethernet "00:03:24:ab:8c:14"
+dhcp windows9 on eth0
+
+create windows10
+set windows10 personality "Microsoft Windows XP Professional SP1"
+set windows10 default tcp action reset
+add windows10 tcp port 135 open
+add windows10 tcp port 139 open
+add windows10 tcp port 445 open
+
+set windows10 ethernet "00:04:24:ab:8c:12"
+dhcp windows10 on eth0
+
+create windows12
+set windows12 personality "Microsoft Windows XP Professional SP1"
+set windows12 default tcp action reset
+add windows12 tcp port 111 open
+add windows12 tcp port 222 open
+add windows12 tcp port 333 open
+
+set windows12 ethernet "00:05:24:ab:8c:13"
+dhcp windows12 on eth0
+
+create windows13
+set windows13 personality "Microsoft Windows XP Professional SP1"
+set windows13 default tcp action reset
+add windows13 tcp port 777 open
+add windows13 tcp port 898 open
+add windows13 tcp port 69 open
+
+set windows13 ethernet "00:06:24:ab:8c:14"
+dhcp windows13 on eth0
+
+create windows14
+set windows14 personality "Microsoft Windows XP Professional SP1"
+set windows14 default tcp action reset
+add windows14 tcp port 135 open
+add windows14 tcp port 139 open
+add windows14 tcp port 445 open
+
+set windows14 ethernet "01:07:24:ab:8c:12"
+dhcp windows14 on eth0
+
+create windows15
+set windows15 personality "Microsoft Windows XP Professional SP1"
+set windows15 default tcp action reset
+add windows15 tcp port 111 open
+add windows15 tcp port 222 open
+add windows15 tcp port 333 open
+
+set windows15 ethernet "02:08:24:ab:8c:13"
+dhcp windows15 on eth0
+
+create windows16
+set windows16 personality "Microsoft Windows XP Professional SP1"
+set windows16 default tcp action reset
+add windows16 tcp port 777 open
+add windows16 tcp port 898 open
+add windows16 tcp port 69 open
+
+set windows16 ethernet "03:11:24:ab:8c:14"
+dhcp windows16 on eth0
+
+create windows17
+set windows17 personality "Microsoft Windows XP Professional SP1"
+set windows17 default tcp action reset
+add windows17 tcp port 135 open
+add windows17 tcp port 139 open
+add windows17 tcp port 445 open
+
+set windows17 ethernet "00:12:24:ab:8c:12"
+dhcp windows17 on eth0
+
+
+create windows18
+set windows18 personality "Microsoft Windows XP Professional SP1"
+set windows18 default tcp action reset
+add windows18 tcp port 111 open
+add windows18 tcp port 222 open
+add windows18 tcp port 333 open
+
+set windows18 ethernet "00:13:24:ab:8c:13"
+dhcp windows18 on eth0
+
+create windows19
+set windows19 personality "Microsoft Windows XP Professional SP1"
+set windows19 default tcp action reset
+add windows19 tcp port 777 open
+add windows19 tcp port 898 open
+add windows19 tcp port 69 open
+
+set windows19 ethernet "00:14:24:ab:8c:14"
+dhcp windows19 on eth0
+
+create windows20
+set windows20 personality "Microsoft Windows XP Professional SP1"
+set windows20 default tcp action reset
+add windows20 tcp port 135 open
+add windows20 tcp port 139 open
+add windows20 tcp port 445 open
+
+set windows20 ethernet "00:15:24:ab:8c:12"
+dhcp windows20 on eth0
+
+create windows21
+set windows21 personality "Microsoft Windows XP Professional SP1"
+set windows21 default tcp action reset
+add windows21 tcp port 111 open
+add windows21 tcp port 222 open
+add windows21 tcp port 333 open
+
+set windows21 ethernet "00:16:24:ab:8c:13"
+dhcp windows21 on eth0
+
+create windows22
+set windows22 personality "Microsoft Windows XP Professional SP1"
+set windows22 default tcp action reset
+add windows22 tcp port 111 open
+add windows22 tcp port 222 open
+add windows22 tcp port 333 open
+
+set windows22 ethernet "00:16:24:ab:8c:a3"
+dhcp windows22 on eth0
+
+create windows23
+set windows23 personality "Microsoft Windows XP Professional SP1"
+set windows23 default tcp action reset
+add windows23 tcp port 777 open
+add windows23 tcp port 898 open
+add windows23 tcp port 69 open
+
+set windows23 ethernet "00:17:24:ab:8c:14"
+dhcp windows23 on eth0
+
+create windows24
+set windows24 personality "Microsoft Windows XP Professional SP1"
+set windows24 default tcp action reset
+add windows24 tcp port 135 open
+add windows24 tcp port 139 open
+add windows24 tcp port 445 open
+
+set windows24 ethernet "01:18:24:ab:8c:12"
+dhcp windows24 on eth0
+
+create windows25
+set windows25 personality "Microsoft Windows XP Professional SP1"
+set windows25 default tcp action reset
+add windows25 tcp port 111 open
+add windows25 tcp port 222 open
+add windows25 tcp port 333 open
+
+set windows25 ethernet "02:19:24:ab:8c:13"
+dhcp windows25 on eth0
+
+create windows26
+set windows26 personality "Microsoft Windows XP Professional SP1"
+set windows26 default tcp action reset
+add windows26 tcp port 777 open
+add windows26 tcp port 898 open
+add windows26 tcp port 69 open
+
+set windows26 ethernet "03:20:24:ab:8c:14"
+dhcp windows26 on eth0
+
+create windows27
+set windows27 personality "Microsoft Windows XP Professional SP1"
+set windows27 default tcp action reset
+add windows27 tcp port 135 open
+add windows27 tcp port 139 open
+add windows27 tcp port 445 open
+
+set windows27 ethernet "00:21:24:ab:8c:12"
+dhcp windows27 on eth0
+
+create windows28
+set windows28 personality "Microsoft Windows XP Professional SP1"
+set windows28 default tcp action reset
+add windows28 tcp port 111 open
+add windows28 tcp port 222 open
+add windows28 tcp port 333 open
+
+set windows28 ethernet "00:22:24:ab:8c:13"
+dhcp windows28 on eth0
+
+create windows29
+set windows29 personality "Microsoft Windows XP Professional SP1"
+set windows29 default tcp action reset
+add windows29 tcp port 777 open
+add windows29 tcp port 898 open
+add windows29 tcp port 69 open
+
+set windows29 ethernet "00:23:24:ab:8c:14"
+dhcp windows29 on eth0
+
+create windows30
+set windows30 personality "Microsoft Windows XP Professional SP1"
+set windows30 default tcp action reset
+add windows30 tcp port 135 open
+add windows30 tcp port 139 open
+add windows30 tcp port 445 open
+
+set windows30 ethernet "00:24:24:ab:8c:12"
+dhcp windows30 on eth0
+
+create windows31
+set windows31 personality "Microsoft Windows XP Professional SP1"
+set windows31 default tcp action reset
+add windows31 tcp port 111 open
+add windows31 tcp port 222 open
+add windows31 tcp port 333 open
+
+set windows31 ethernet "00:25:24:ab:8c:13"
+dhcp windows31 on eth0
+
+create windows32
+set windows32 personality "Microsoft Windows XP Professional SP1"
+set windows32 default tcp action reset
+add windows32 tcp port 111 open
+add windows32 tcp port 222 open
+add windows32 tcp port 333 open
+
+set windows32 ethernet "00:26:24:ab:8c:a3"
+dhcp windows32 on eth0
+
+create windows33
+set windows33 personality "Microsoft Windows XP Professional SP1"
+set windows33 default tcp action reset
+add windows33 tcp port 777 open
+add windows33 tcp port 898 open
+add windows33 tcp port 69 open
+
+set windows33 ethernet "00:27:24:ab:8c:14"
+dhcp windows33 on eth0
+
+create windows34
+set windows34 personality "Microsoft Windows XP Professional SP1"
+set windows34 default tcp action reset
+add windows34 tcp port 135 open
+add windows34 tcp port 139 open
+add windows34 tcp port 445 open
+
+set windows34 ethernet "01:28:24:ab:8c:12"
+dhcp windows34 on eth0
+
+create windows35
+set windows35 personality "Microsoft Windows XP Professional SP1"
+set windows35 default tcp action reset
+add windows35 tcp port 111 open
+add windows35 tcp port 222 open
+add windows35 tcp port 333 open
+
+set windows35 ethernet "02:30:24:ab:8c:13"
+dhcp windows35 on eth0
+
+create windows36
+set windows36 personality "Microsoft Windows XP Professional SP1"
+set windows36 default tcp action reset
+add windows36 tcp port 777 open
+add windows36 tcp port 898 open
+add windows36 tcp port 69 open
+
+set windows36 ethernet "03:31:24:ab:8c:14"
+dhcp windows36 on eth0
+
+create windows37
+set windows37 personality "Microsoft Windows XP Professional SP1"
+set windows37 default tcp action reset
+add windows37 tcp port 135 open
+add windows37 tcp port 139 open
+add windows37 tcp port 445 open
+
+set windows37 ethernet "00:32:24:ab:8c:12"
+dhcp windows37 on eth0
+
+create windows38
+set windows38 personality "Microsoft Windows XP Professional SP1"
+set windows38 default tcp action reset
+add windows38 tcp port 111 open
+add windows38 tcp port 222 open
+add windows38 tcp port 333 open
+
+set windows38 ethernet "00:33:24:ab:8c:13"
+dhcp windows38 on eth0
+
+create windows39
+set windows39 personality "Microsoft Windows XP Professional SP1"
+set windows39 default tcp action reset
+add windows39 tcp port 777 open
+add windows39 tcp port 898 open
+add windows39 tcp port 69 open
+
+set windows39 ethernet "00:34:24:ab:8c:14"
+dhcp windows39 on eth0
