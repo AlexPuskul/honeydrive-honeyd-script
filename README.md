@@ -1,2 +1,2 @@
 # honeydrive-honeyd-script
-This script is meant to be run the honeydrive distro, right out the box, establishes honeypots with honeyd
+This script is to be run the stock honeydrive distro, it establishes honeypots with honeyd
