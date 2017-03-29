@@ -8,17 +8,19 @@ add win_mail tcp port 25 “sh /usr/share/honeyd/scripts/win32/win2k/exchange-sm
 add win_mail tcp port 110 “sh /usr/share/honeyd/scripts/win32/win2k/exchange-pop3.sh $ipsrc $sport $ipdst $dport”
 add win_mail tcp port 143 “sh /usr/share/honeyd/scripts/win32/win2k/exchange-imap.sh $ipsrc $sport $ipdst $dport”
 add win_mail udp port 161 “perl /usr/share/honeyd/scripts/unix/general/snmp/fake-snmp.pl public private –config=scripts/unix/general”
-bind 10.0.100.200 win_mail
+set win_mail ethernet "00:00:24:ab:8c:12"
+dhcp win_mail on eth0
 
 # FTP Linux server template
 create linuxftp
 set linuxftp personality "Linux 2.4.7 (X86)"
 set linuxftp default tcp action reset
 set linuxftp default udp action block
-set linuxftp default icmp action open
- 
+set linuxftp default icmp action open 
 add linuxftp tcp port 21 "sh /usr/share/honeyd/scripts/unix/linux/suse8.0/proftpd.sh $ipsrc $sport $ipdst $dport"
-bind 10.0.100.201 linuxftp
+
+set linuxftp ethernet "00:00:24:ab:8c:12"
+dhcp linuxftp on eth0
 
 # Windows Web Server
 create win_web
@@ -29,5 +31,7 @@ set win_web default icmp action open
 add win_web tcp port 21 “sh /usr/share/honeyd/scripts/win32/win2k/msftp.sh $ipsrc $sport $ipdst $dport”
 add win_web tcp port 80 “sh /usr/share/honeyd/scripts/win32/win2k/iis.sh $ipsrc $sport $ipdst $dport”
 add win_web udp port 161 “perl /usr/share/honeyd/scripts/unix/general/snmp/fake-snmp.pl public private –config=scripts/unix/general”
-bind 10.0.100.202 win_web
+
+set win_web ethernet "00:00:24:ab:8c:12"
+dhcp win_web on eth0
 
